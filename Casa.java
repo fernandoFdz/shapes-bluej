@@ -15,6 +15,9 @@ class Casa
    }
    
    // Mètodos //
+   /*
+    * metodo que muestra o hace visible las figuras que se utilizan
+    */
    void dibujate(){
        ventana.makeVisible();
        techo.makeVisible();
@@ -22,6 +25,9 @@ class Casa
        puerta.makeVisible();
    }
    
+   /*
+    * mtodo acomoda las figuras geometricas para que  tengan la forma de la casa
+    */
    void acomodate()
    {
        // Colocar los objetos en la posiciòn que les corresponde //
@@ -43,6 +49,9 @@ class Casa
        puerta.moveVertical(180);
    }
    
+   /*
+    * colorea las piezas con el color que se define desde aqui
+    */
    void color(){
        techo.changeColor("green");
        ventana.changeColor("red");
